@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bez růžice a měřítka - webová kartografie na webu iROZHLAS.cz 22. října 2019</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|EB+Garamond);
+      body { font-family: 'Roboto'; }
+      .remark-code, .remark-inline-code { font-family: 'Roboto Mono'; }
+      img {max-width: 760px; max-height: 350px}
+
+      law {
+        font-family: 'EB Garamond', serif;
+        font-style: italic;
+      }
+      .logo {
+        max-width: 350px;
+      }
+    </style>
+  </head>
+  <body>
+<textarea id="source">
+
+class: center, middle
+
+# Bez růžice a měřítka kartografie na webu
+
+<img src="./img/logo.jpg" class="logo">
+
+### Jan Cibulka, [jan.cibulka@rozhlas.cz](mailto:jan.cibulka@rozhlas.cz)
+
+prezentace: [https://datarozhlas.cz/karto-den/](https://datarozhlas.cz/karto-den/)
+
+---
+## Datová novinařina na iROZHLAS.cz
+
+[data na webu iROZHLAS.cz](https://www.irozhlas.cz/zpravy-tag/datova-zurnalistika)
+
+![datažurna](./img/datazurna.png)
+---
+
+### Mapy volební
+
+![datažurna](./img/volebni.png)
+
+[Jak se volilo ve vašem okrsku? Prohlédněte si nejpodrobnější mapu výsledků komunálních voleb](https://www.irozhlas.cz/volby/mapa-okrsky-sousede-komunalni-volby-2018_1810080700_zlo)  
+[Koho volili vaši sousedi? Prohlédněte si...](https://www.irozhlas.cz/volby/data-prezidentske-volby-mapa_1801271900_cib)  
+[Jakou barvu má váš okrsek? Prohlédněte si...](https://www.irozhlas.cz/volby/jak-volili-vasi-sousedi-prohlednete-si-nejpodrobnejsi-mapu-volebnich-vysledku_1710220940_pek)
+---
+
+### Mapy servisní
+
+![datažurna](./img/servisni.png)
+
+[Přísečná na Českokrumlovsku nebo Ivanovice na Hané. Podívejte se na mapu míst, kde nejvíc bojují se suchem ](https://www.irozhlas.cz/zpravy-domov/sucho-cesko-mapa-voda-pocasi-teplo_1807020625_cib)  
+[Kde se v Praze nejvíc staví a kde to vázne?](https://www.irozhlas.cz/zpravy-domov/kde-se-v-praze-nejvic-stavi-a-kde-vazne-podivejte-se-na-interaktivni-mapu_1805220730_zlo)
+[Odhozené injekční stříkačky v ulicích Brna](https://www.irozhlas.cz/zpravy-domov/mapa-jehly-brno-narkomani-mestka-policie-akce-jehla_1803150715_cib)  
+[Ulice pojmenované po ženách? Vzácnost.](https://www.irozhlas.cz/zpravy-domov/ulice-pojmenovane-po-zenach-vzacnost-interaktivni-mapa-ukazuje-jak-drtiva-je_1806170605_cib)
+---
+
+### Mapy objevovací
+
+![datažurna](./img/objevovaci.png)
+
+[Přes čtyři miliony staveb. Podívejte se na mapu všech budov v Česku](https://www.irozhlas.cz/zpravy-domov/stavby-mapa-obce-urbanismus-gebrian_1902140614_zlo?latlng=50.0814917|14.426672199999985|13)  
+[Interaktivní mapa kvality života: nastavte si vlastní kritéria...](https://www.irozhlas.cz/zpravy-domov/mapa-kvality-zivota-median-prokop-kscm-spd_1811220600_jab)  
+[Pravítko na agrosquatting: kolik hřišť se vejde na Václavák?](https://www.irozhlas.cz/komentare/rozloha-vaclavske-namesti-fotbalove-hriste_1711291520_cib)  
+[Hlídáme státu peníze: jak jsme hledali nejasnosti v dotacích pro Agrofert](https://www.irozhlas.cz/komentare/agrofert-dotace-zemedelska-puda-podvod_1711280700_cib)
+
+---
+### Otevíráme mapy
+
+![datažurna](./img/mapdata.png)
+
+[9 A 71/2015, MS-P](http://nssoud.cz/mainc.aspx?cls=EvidencniListVety&evl_id=100016)  
+[15 A 44 / 2018, MS-P](http://infosoud.justice.cz/InfoSoud/public/search.do?org=MSPHAAB&krajOrg=MSPHAAB&cisloSenatu=15&druhVec=A&bcVec=44&rocnik=2018&typSoudu=os&autoFill=true&type=spzn)  
+[Výmluva na autorský zákon neobstála, policie musí zveřejnit mapu policejních okrsků ](https://www.irozhlas.cz/zpravy-domov/vymluva-na-autorsky-zakon-neobstala-policie-musi-zverejnit-mapu-policejnich_1705180725_cib)
+---
+
+### Co chybí?
+
+![datažurna](./img/map_elements.png)
+
+[docs.qgis.org](https://docs.qgis.org/2.18/cs/docs/gentle_gis_introduction/map_production.html)
+---
+
+### Vždyť by se to tam krásně...
+
+![datažurna](./img/pc.png)
+
+---
+### ...nevešlo
+
+![datažurna](./img/mobil.png)
+
+<law>...ale pořád hledáme, jak to udělat líp...</law>
+
+---
+### Trocha techniky
+
+![datažurna](./img/stack.png)
+
+[https://github.com/mapbox](Mapbox OSS)  
+[https://github.com/geopython](GeoPython)  
+[https://www.qgis.org/en/site/](QGIS)  
+[https://aws.amazon.com/s3/](Amazon S3)  
+[https://leafletjs.com/](Leaflet.js)  
+[https://github.com/openlayers/](OpenLayers) 
+[http://vdp.cuzk.cz/](RÚIAN)  
+[OpenStreetMap](https://www.openstreetmap.org/)
+---
+## Dotazy, připomínky?
+
+[iROZHLAS.cz](https://www.irozhlas.cz/zpravy-tag/datova-zurnalistika)
+
+prezentace: [https://datarozhlas.cz/karto-den/](https://datarozhlas.cz/karto-den/)
+
+Případně pište na [jan.cibulka@rozhlas.cz](mailto:jan.cibulka@rozhlas.cz)
+</textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>
+  var slideshow = remark.create();
+</script>
+  </body>
+</html>
