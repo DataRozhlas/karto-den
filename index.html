@@ -124,6 +124,18 @@ Případně pište na [jan.cibulka@rozhlas.cz](mailto:jan.cibulka@rozhlas.cz)
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>
   var slideshow = remark.create();
+
+  //target blank
+  // copy https://code.luasoftware.com/tutorials/hugo/how-to-create-link-with-target-blanks-in-hugo-markdown/
+
+  var links = document.getElementsByTagName('a');
+  for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+    if (links[i].hostname != window.location.hostname) {
+        links[i].target = '_blank';
+        links[i].rel = 'noopener noreferrer';
+    };
+  };
+
 </script>
   </body>
 </html>
